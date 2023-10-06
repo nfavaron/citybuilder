@@ -1,0 +1,135 @@
+
+html {
+    min-height: 100%;
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+}
+
+button {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+.config-loader {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: white;
+    transition: top 250ms ease-out;
+}
+
+.config-loader--is-open {
+    top: 0;
+}
+
+.config-loader-header {
+    background: #eeeeee;
+    color: #347ccc;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.config-loader textarea, .config-loader textarea:focus {
+    display: block;
+    width: 100%;
+    height: 85%;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.config-loader button {
+    display: block;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: 1.5em;
+    background: #00aa00;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+}
+
+.config-loader button:hover {
+    background: #00bb11;
+    cursor: pointer;
+}
+
+header, footer {
+    width: 100%;
+    height: 5%;
+    background: #ffffff;
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    display: flex;
+    align-items: stretch;
+}
+
+header {
+    top: 0;
+    justify-content: space-between;
+}
+
+header .logo {
+    background: url('/images/realforce-logo.png') 0 0 no-repeat;
+    background-size: contain;
+    width: 20%;
+    height: auto;
+    margin: 8px;
+}
+
+header .text {
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    font-size: 1em;
+}
+
+footer {
+    bottom: 0;
+    justify-content: end;
+}
+
+footer button {
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    padding: 0 2%;
+    text-align: center;
+    font-size: 1em;
+    background: transparent;
+    color: #347ccc;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background: #347ccc;
+    color: #ffffff;
+    transition: background 250ms ease-out, color 250ms ease-out;
+}
+

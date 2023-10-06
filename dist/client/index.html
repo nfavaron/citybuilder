@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Realforce Solutions Academy</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo"></div>
+        <div class="text"><span>RFS Academy</span></div>
+    </header>
+    <div id="config-loader" class="config-loader">
+        <div class="config-loader-header"><span>Edit the city configuration</span></div>
+        <textarea id="config-loader-textarea">
+{
+    "city": [
+        [{ "color": "brown" }, { "color": "brown" }, { "color": "brown" }, { "color": "brown" }, { "color": "gray" }],
+        [{ "color": "gray" }, { "color": "gray" }, { "color": "gray" }, { "color": "blue" }, { "color": "gray" }],
+        [{ "color": "gray" }, { "color": "green" },  { "color": "green" }, { "color": "green" }, { "color": "gray" }],
+        [{ "color": "gray" }, { "color": "green" },  { "color": "green" }, { "color": "green" } ,{ "color": "gray" }],
+        [{ "color": "gray" }, { "color": "gray" },  { "color": "gray" },  { "color": "gray" }, { "color": "gray" }]
+    ]
+}
+        </textarea>
+        <button id="config-loader-button">Apply</button>
+    </div>
+    <footer>
+        <button id="footer-config-button">Config</button>
+    </footer>
+    <script type="module" src="bundle.js"></script>
+</body>
+</html>

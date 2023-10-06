@@ -1,26 +1,30 @@
-# Realforce Solutions Academy
+# CityBuilder: TypeScript + config based OOP Architecture + WebGL + Firebase
+The goal is to learn config based Object-Oriented Programming architecture, with TypeScript, by building a city.
 
-This repository is a fork of [Three.js-TypeScript-Boilerplate](https://github.com/Sean-Bradley/Three.js-TypeScript-Boilerplate).
+The city configuration will be shared among developers through a Firebase Realtime Database.
+Any remote configuration change will instantly reflect on every developer's rendered city.
+Have fun, be creative to make a lively city!
 
-# Boilerplate
-When run, the boilerplate shows a green wireframe rotating cube, with OrbitControls, Stats and dat.GUI included.
+Notice: This repository's base is a fork of [Three.js-TypeScript-Boilerplate](https://github.com/Sean-Bradley/Three.js-TypeScript-Boilerplate).
 
-It uses webpack-dev-server for the development build, and NodeJS with Express for production build.
+### Rendering
 
-Both server and client projects are written in TypeScript.
+![WebGL rendering](./webgl.png)
 
-## Installing
+![Configuration rendering](./configuration.png)
+
+## Setup
 
 1. Clone Repository
 
 ```bash
-git clone https://github.com/realforce/rfs-academy.git
+git clone https://github.com/nfavaron/citybuilder.git
 ```
 
 2. CD into folder
 
 ```bash
-cd rfs-academy
+cd citybuilder
 ```
 
 3. Install TypeScript
@@ -35,12 +39,29 @@ npm install -g typescript
 npm install
 ```
 
+5. Copy/paste your Firebase project configuration into application.config.ts
+
+```
+  /**
+   * Firebase configuration
+   */
+  firebaseConfig = {
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: ""
+  };
+```
+
 5. Start it
 
 ```bash
 npm run dev
 ```
 
-6. Visit [http://localhost:4200](http://localhost:4200)
+6. Open [http://localhost:4200](http://localhost:4200) in your browser
 
-You should see a rotating green wireframe cube, and be able to rotate it further with your mouse.
+You should see colored cubes, and be able to rotate it with your mouse.

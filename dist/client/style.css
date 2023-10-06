@@ -92,14 +92,6 @@ header {
     justify-content: space-between;
 }
 
-header .logo {
-    background: url('/images/realforce-logo.png') 0 0 no-repeat;
-    background-size: contain;
-    width: 20%;
-    height: auto;
-    margin: 8px;
-}
-
 header .text {
     display: flex;
     align-items: center;

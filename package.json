@@ -1,5 +1,5 @@
 {
-  "name": "realforce-solutions-academy",
+  "name": "citybuilder",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./dist/server/server.js"
   },
-  "author": "Realforce Solutions",
+  "author": "Nicolas Favaron",
   "license": "ISC",
   "devDependencies": {
     "@types/dat.gui": "^0.7.7",

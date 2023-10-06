@@ -46,12 +46,12 @@ export class ApplicationConfig implements ApplicationConfigInterface {
    * Firebase configuration
    */
   firebaseConfig = {
-    apiKey: "AIzaSyAWtVpk7bSz2zZo9Do9INPdcvOBXPSGFws",
-    authDomain: "realforce-academy.firebaseapp.com",
-    databaseURL: "https://realforce-academy-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "realforce-academy",
-    storageBucket: "realforce-academy.appspot.com",
-    messagingSenderId: "874621429334",
-    appId: "1:874621429334:web:aa98e5b412647def4abdf7"
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: ""
   };
 }

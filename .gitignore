@@ -1,0 +1,6 @@
+.idea
+*Zone.Identifier
+.DS_Store
+.vscode
+.docker-sync
+/node_modules
